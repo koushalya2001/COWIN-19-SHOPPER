@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>STOCKS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="format.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body,h1,h2,h3,h4,h5,h6,table{font-family: "Lato", sans-serif}
+.w3-bar,h1,button,table,h3 {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+body{background-color:2196F3}
+.button {
+  background-color:white;; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  width:50%;
+  
+}
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+u{
+text-transform:uppercase
+}
+
+
+.search {
+  width: 50%;
+  position: relative;
+  margin:auto;
+  margin-left:400px;
+  margin-bottom:20px;
+  float:left;
+  
+}
+
+.searchTerm {
+  width: 80%;
+  border: 3px solid #2196F3;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #2196F3;
+}
+
+
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #2196F3;
+  background: #2196F3;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin:0px;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #2196F3;
+  font-family: helvetica;
+  margin: 0;
+}
+
+a:hover, .dropdown:hover .dropbtn {
+  background-color: #2196F3;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+
+
+
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Profile</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Orders Placed</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Shop</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Orders Placed</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+  <h1 class="w3-margin w3-jumbo">Shop</h1>
+  <p class="w3-xlarge"></p>
+
+</header>
+  
+  <br>
+   <div class="search">
+      <input type="text" class="searchTerm" placeholder="What are you looking for?">
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+    <div class="dropdown">
+    <button class="dropbtn">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+ <div class="dropdown-content">
+      
+      <a href="#">Green Grocer</a>
+      <a href="#">Pharmacy</a>
+	   <a href="#">Cloth Shop</a>
+      <a href="#">Book stores</a>
+      <a href="#">Stationary</a>
+	   <a href="#">Hardware shops</a>
+      <a href="#">Department store</a>
+      <a href="#">Bakeries</a>
+	   <a href="#">Tea shops</a>
+      <a href="#">Butcher shops</a>
+      
+    </div>
+	</div>
+  
+  <center>
+   <div>
+  <button class="button button1"><b><u>Gfashion Women Garments- copy</u></b><br/>
+South Street<br />
+New York 56000<br />
+United States
+27.3 km
+</button></div>
+   <div>
+  <button class="button button1">
+<u><b>Nilgiris Supermarket Thillai Nagar</b></u><br />
+3.9 
+ (561) · Supermarket
+No-84-C, Fort Station Rd, near Cethar Hospital
+Open ⋅ Closes 9PM · 096770 99619
+
+"Typical cash & carry / convenience store."</button></div>
+   <div>
+  <button class="button button1">
+<u><b>Mangai Department Store</b></u><br />
+4.1 
+ (77) · Grocery store
+11th Cross E Rd
+Open ⋅ Closes 10PM · 0431 404 0066</button></div>
+   <div>
+  <button class="button button1">
+<u><b>Kumudham Department Stores</b></u><br />
+4.1 
+ (114) · Supermarket
+Vayalur Rd
+Open ⋅ Closes 9:15PM · 0431 403 0447</button></div>
+   <div>
+  <button class="button button1"><u><b>Gfashion Women Garments- copy</b></u><br />
+South Street
+New York 56000
+United States
+27.3 km
+Directions</button></div>
+   <div>
+  <button class="button button1"><u><b>Food City Super Market</b></u><br />
+  Address: 374, Rajaram Rd, K K Nagar, Tiruchirappalli, Tamil Nadu 620021
+Hours: 
+Closed ⋅ Opens 8:30AM Sun
+
+
+
+Phone: 0431 400 1932</button></div>
+   <div>
+  <button class="button button1"><u><b>The Best Super Market</b></u><br />
+3.9
+124 Google reviews
+Supermarket
+Address: 60,61,Vasans Complex, Sannathi St, Thiruvanaikoil, Tiruchirappalli, Tamil Nadu 620005
+Hours: 
+Open ⋅ Closes 10PM
+
+
+
+Phone: 0431 223 0248</button></div>
+   <div>
+  <button class="button button1"><u><b>Gfashion Women Garments- copy</b></u><br />
+South Street
+New York 56000
+United States
+27.3 km
+Directions</button></div>
+  </div>
+  </center>

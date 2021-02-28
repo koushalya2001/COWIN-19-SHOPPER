@@ -1,0 +1,19 @@
+{
+	"db":{
+		"dev":{
+
+			"host":"mongodb+srv://common:fromceg143@ceg-oherv.mongodb.net/test?retryWrites=true&w=majority",
+			"hosttrial":"mongodb://localhost:27017/shopmodule"
+
+
+		}
+	,
+		"prod":{
+
+			"host":"mongodb:// /",
+			"port":"27017",
+			"database":"main"
+		}
+	},
+	"PORT" : 4000
+}

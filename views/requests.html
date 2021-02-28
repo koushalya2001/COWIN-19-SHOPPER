@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" class="btn btn-primary" data-toggle="modal" data-target="#myModal">User</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Volunteer</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Shopkeeper</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" >User</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Volunteer</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Shopkeeper</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+  <h1 class="w3-margin w3-jumbo">Requests</h1>
+  <p class="w3-xlarge"></p>
+
+</header>
+
+<br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Request 1</h3>
+      <p>Details</p>
+      <p> <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Accept</button>
+	  <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Decline</button></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Request 2</h3>
+      <p>Details</p>
+      <p> <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Accept</button>
+	  <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Decline</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Request 3</h3>
+      <p>Details</p>
+      <p> <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Accept</button>
+	  <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Decline</button></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Request 4</h3>
+      <p>Details</p>
+      <p> <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Accept</button>
+	  <button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Decline</button></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

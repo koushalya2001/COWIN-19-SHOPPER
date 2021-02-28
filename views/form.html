@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>  
+
+  <title>Shop signin</title>
+
+  <style>
+    button:disabled{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+  </style>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <!--{% block body %}
+  {% parent %}
+  {% endblock %}
+  {% block newblock %}-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center"> Shop Registration</h5>
+            <form class="form-signin" method="POST" action = "login.php">
+              
+              <div class="form-label-group">
+                <input type="text" id="inputname" class="form-control" name = "shopname" placeholder="shop-name" required>
+                <label for="inputname">Shop-Name</label>
+              </div>
+               <div class="form-label-group">
+                <input type="text" id="phonenumber" class="form-control" name = "phonenumber" placeholder="Phone-number" required>
+                <label for="phonenumber">Phone Number</label>
+              </div>
+              <div class="form-label-group">
+                <input type="email" id="inputEmail" class="form-control" name = "email" placeholder="Email address" required autofocus>
+                <label for="inputEmail">Email Address</label>
+              </div>
+             <div class="form-label-group">
+               <input type="hidden" name="_csrf" value="{{pprtpt}}"></input>
+            
+                <input type="text" rows="10" cols = "30" id="shopaddress" class="form-control" name = "address" placeholder="Shop-Address" required>
+                <label for="shopaddress">Shop-Address</label>
+              </div>
+              
+              <div class="form-label-group">
+              
+                <input name="password" id="inputPassword"class="form-control"name="inputPassword"  placeholder="inputPassword"  required/>
+                <label  for="inputPassword">password :</label>
+              </div>
+
+              <div class="form-label-group">
+                
+                <input type="password" placeholder="Password" id="ConfirmPassword" class="form-control"name="ConfirmPassword"  placeholder="Confirm-Password"  required/> <span id='message'></span>
+                <label for="ConfirmPassword">Confirm-Password</label>
+              </div>
+
+              <p>
+                Already a member? <a href="shop-signin.html">Sign in</a>
+              </p>
+              
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" name="reg_user" id="reg" type="submit">Register</button>
+              <hr class="my-4">
+               </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+ $('#inputPassword, #ConfirmPassword').on('keyup', function () {
+    if ($('#inputPassword').val() == $('#ConfirmPassword').val()) {
+        $('#message').html('Matching').css('color', 'green');     
+    } 
+    else $('#message').html('Not Matching').css('color', 'red'); 
+});
+
+  </script>
+
+  {% endblock %}
+</body>
+</html>

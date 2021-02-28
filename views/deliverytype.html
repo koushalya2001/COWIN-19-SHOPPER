@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Shop</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+  height:100%
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 100%;
+  height:100%
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">User</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Volunteer</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Shopkeeper</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">User</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Volunteer</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Shopkeeper</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"></a>
+  </div>
+</div>
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:50px 16px">
+  <h1 class="w3-margin w3-jumbo">Pick A Delivery Type</h1>
+  <p class="w3-xlarge"></p>
+
+</header>
+<main class="cd-main container margin-top-xxl">
+  <div class="text-component text-center">
+  
+    <p class="flex flex-wrap flex-center flex-gap-xxs">
+	
+<div class="row">
+  <div class="column">
+    <div class="card">
+	<img src="vol.jpg" alt="Request a Volunteer" style="width:100%">
+  <h1>Request a Volunteer</h1>
+  <p>Here you would have to request a volunteer to collect your purchase on your behalf.</p>
+  <p><button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Choose</button></p>
+	</div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+	<img src="shop.jpg" alt="Pickup" style="width:100%;height:70%">
+  <h1>Pickup</h1>
+  <p>Here you get to book slots to collect your purchase yourself.</p>
+  <p><button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Choose</button></p>
+	</div>
+  </div>
+ <div class="column">
+    <div class="card">
+	<img src="del.jpg" alt="Delivery By Shop" style="width:100%">
+  <h1>Delivery By Shop</h1>
+  <p>Here your purchase will be delivered to you by the shop</p>
+  <p><button class="w3-button w3-black w3-padding-small w3-small w3-margin-top">Choose</button></p>
+  
+	</div>
+  </div>
+
+</div>
+   
+    </p>
+  </div>
+</main>
